@@ -61,10 +61,10 @@ called from the derivative class.
 Example in code: My concrete classes all inherit methods and properties from their parent and base classes.
 
 ##### Polymorphism
-Polymorphism is the ability to change the way a method that is inherited from a class. A method can be shared
-across multiple classes and be put into an array of sibling classes.
+Polymorphism is the ability to remember the base class. The class will behave the as it was defines, but it
+will still remember the other classes.
 
-Example in code: The elephant class inherited the HasFur property as true, but changed it to false in the class.
+Example in code: Calling an array of animals in a test, but they all behave as they were initiated.
 
 ---
 
