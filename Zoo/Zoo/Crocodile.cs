@@ -6,5 +6,6 @@ namespace Zoo
 {
     class Crocodile : Reptile
     {
+        public int NumberOfTeeth { get; set; }
     }
 }

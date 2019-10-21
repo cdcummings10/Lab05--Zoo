@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Zoo
 {
-    class Marmot
+    class Marmot : Mammal
     {
+        public bool IsFriendly { get; private set; } = true;
+        private bool _hasFur = true;
+        public override bool HasFur { get { return _hasFur; } set { _hasFur = value; } }
+        public override string TypeOfDiet
+        {
+            get => base.TypeOfDiet = "I am an herbavore!";
+            set => base.TypeOfDiet = value;
+        }
     }
 }

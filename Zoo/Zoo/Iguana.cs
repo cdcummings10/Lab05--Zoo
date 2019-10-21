@@ -6,5 +6,6 @@ namespace Zoo
 {
     class Iguana : Reptile
     {
+        public decimal TongueLength { get; set; }
     }
 }
