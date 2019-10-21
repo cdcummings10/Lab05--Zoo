@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Marmot : Mammal
+    public class Marmot : Mammal
     {
         public bool IsFriendly { get; private set; } = true;
         private bool _hasFur = true;

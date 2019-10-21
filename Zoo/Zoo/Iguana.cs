@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Iguana : Reptile
+    public class Iguana : Reptile
     {
         public decimal TongueLength { get; set; }
     }

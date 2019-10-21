@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Crocodile : Reptile
+    public class Crocodile : Reptile
     {
         public int NumberOfTeeth { get; set; }
     }

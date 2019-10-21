@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    abstract class Mammal : Animal
+    abstract public class Mammal : Animal
     {
         private string _typeOfDiet = "I am an omnivore.";
         public virtual string TypeOfDiet
@@ -31,9 +31,9 @@ namespace Zoo
             }
         }
         abstract public bool HasFur { get; set; }
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("I sleep with my eyes closed.");
+            return "I sleep with my eyes closed.";
         }
         public override void Reproduce()
         {

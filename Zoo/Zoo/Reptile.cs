@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    abstract class Reptile : Animal
+    abstract public class Reptile : Animal
     {
         private string _bloodTemp;
         public override string BloodTemp { get => _bloodTemp = "Cold Blooded"; 
@@ -15,9 +15,9 @@ namespace Zoo
             get { return _hasScales; }
             set { _hasScales = value; }
         }
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("I sleep with my eyes open cuz I don't have eyelids.");
+            return "I sleep with my eyes open cuz I don't have eyelids.";
         }
         public override void Reproduce()
         {

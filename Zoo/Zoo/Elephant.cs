@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Elephant : Mammal
+    public class Elephant : Mammal
     {
         private bool _hasFur = false;
         public override bool HasFur { get { return _hasFur; } set { _hasFur = value; } }
