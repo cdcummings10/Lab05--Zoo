@@ -6,7 +6,9 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Elephant elephant = new Elephant();
+            elephant.BloodTemp = "Warm blooded.";
+            Console.WriteLine(elephant.TypeOfDiet);
         }
     }
 }

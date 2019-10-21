@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Zoo
 {
-    class Animal
+    abstract class Animal
     {
+        public abstract string BloodTemp { get; set; }
+        public abstract void Sleep();
+        public abstract void Reproduce();
 
     }
 }
