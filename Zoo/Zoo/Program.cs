@@ -7,8 +7,10 @@ namespace Zoo
         static void Main(string[] args)
         {
             Elephant elephant = new Elephant();
-            elephant.BloodTemp = "Warm blooded.";
-            Console.WriteLine(elephant.TypeOfDiet);
+            Crocodile crocodile = new Crocodile();
+            Iguana iguana = new Iguana();
+            Marmot marmot = new Marmot();
+            Jaguar jaguar = new Jaguar();
         }
     }
 }

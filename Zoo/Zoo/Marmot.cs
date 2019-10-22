@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    public class Marmot : Mammal
+    public class Marmot : Mammal, ILick
     {
         public bool IsFriendly { get; private set; } = true;
         private bool _hasFur = true;
@@ -13,6 +13,10 @@ namespace Zoo
         {
             get => base.TypeOfDiet = "I am an herbavore!";
             set => base.TypeOfDiet = value;
+        }
+        public string Lick()
+        {
+            return "Marmots are very social and lick people";
         }
     }
 }

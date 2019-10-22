@@ -35,13 +35,13 @@ namespace Zoo
         {
             return "I sleep with my eyes closed.";
         }
-        public override void Reproduce()
+        public override string Reproduce()
         {
-            Console.WriteLine("I get pregnant to have a baby!");
+            return "I get pregnant to have a baby!";
         }
-        public virtual void Eat()
+        public virtual string Eat()
         {
-            Console.WriteLine("I eat with my mouth! Yum!");
+            return "I eat with my mouth! Yum!";
         }
     }
 }

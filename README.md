@@ -84,3 +84,4 @@ Actual time to finish: 4 Hours
 ### Change Log 
 
 1.0: *Finished Building out of Animal Classes.* - 21 Oct 2019
+1.1: *Added Interfaces to Animal Classes. Added new tests for Interfaces.* - 22 Oct 2019
