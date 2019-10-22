@@ -66,20 +66,32 @@ will still remember the other classes.
 
 Example in code: Calling an array of animals in a test, but they all behave as they were initiated.
 
+#### Interfaces
+An interface is a class-like type that we can use to link like classes together to perform a very
+specific action.
+
+My two interfaces that were implemented at IGetFedMeat and ILick. I implemented these because there 
+are multiple classes that can do both in reptile and mammal, but not all do these things. For
+example: crocodiles and jaguars are reptiles and mammals respectively, but they both eat meat. 
+it wouldn't make sense to add it to any of the abstract classes.
+
 ---
 
 ### Visuals
 
 #### UML Chart
-![App Start](assets/UMLchart.png)
+![UML Chart](assets/UMLchart.png)
+
+#### App Start
+![App Start](assets/appStart.png)
 
 
 ---
 
 ### Time Estimates
-Estimated time to finish: 3 Hours
+Estimated time to finish: 4.5 Hours
 
-Actual time to finish: 4 Hours
+Actual time to finish: 6 Hours
 
 ### Change Log 
 
