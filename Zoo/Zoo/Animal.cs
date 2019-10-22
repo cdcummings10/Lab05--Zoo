@@ -8,7 +8,7 @@ namespace Zoo
     {
         public abstract string BloodTemp { get; set; }
         public abstract string Sleep();
-        public abstract void Reproduce();
+        public abstract string Reproduce();
 
     }
 }

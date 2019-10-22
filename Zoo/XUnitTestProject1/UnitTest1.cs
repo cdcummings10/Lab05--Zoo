@@ -19,12 +19,7 @@ namespace XUnitTestProject1
             Mammal[] arr = new Mammal[] { marmot, elephant};
             Assert.Equal("I sleep with my eyes closed.", arr[animal].Sleep());
         }
-        [Fact]
-        public void TestIfIguanaIsAReptileFromSleepFunction()
-        {
-            
-            Assert.Equal("I sleep with my eyes open cuz I don't have eyelids.", iguana.Sleep());
-        }
+        
         [Fact]
         public void TestIfJaguarHasHaveFurProperty()
         {
@@ -42,9 +37,33 @@ namespace XUnitTestProject1
             Animal[] arr = new Animal[] { marmot, jaguar, elephant, iguana, crocodile };
             Assert.NotEqual(bloodType, arr[animal].BloodTemp);
         }
+        [Fact]
         public void TestIfCrocodileHasScales()
         {
             Assert.True(crocodile.HasScales);
         }
+
+        #region Interfaces
+        [Fact]
+        public void TestIfInterfaceMeatEatersGetsCalledByCorrectClasses()
+        {
+            Assert.Equal("I only eat blue steaks.", jaguar.EatSteak());
+        }
+        [Fact]
+        public void TestIfInheritanceIsOccurringInElephantFromAnimal()
+        {
+            Assert.Equal("I get pregnant to have a baby!", elephant.Reproduce());
+        }
+        [Fact]
+        public void TestPolymorphismInElephantFromMammalEatFunction()
+        {
+            Assert.NotEqual(jaguar.Eat(), elephant.Eat());
+        }
+        [Fact]
+        public void TestIfIguanaIsAReptileFromSleepFunction()
+        {
+            Assert.Equal("I sleep with my eyes open cuz I don't have eyelids.", iguana.Sleep());
+        }
+        #endregion
     }
 }

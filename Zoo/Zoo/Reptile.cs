@@ -19,9 +19,9 @@ namespace Zoo
         {
             return "I sleep with my eyes open cuz I don't have eyelids.";
         }
-        public override void Reproduce()
+        public override string Reproduce()
         {
-            Console.WriteLine("I lay eggs to give birth.");
+            return "I lay eggs to give birth.";
         }
         public virtual void Eat()
         {
